@@ -1,0 +1,281 @@
+#===========================================================================
+# allowed DPIs
+#===========================================================================
+dpis: [75, 150, 200]
+
+#===========================================================================
+# the allowed scales
+#===========================================================================
+scales:
+  - 0
+  - 500
+  - 1000
+  - 2000
+  - 5000
+  - 10000
+  - 20000
+  - 25000
+  - 50000
+  - 75000
+  - 100000
+
+#===========================================================================
+# the list of allowed hosts
+#===========================================================================
+hosts:
+  - !localMatch
+    dummy: true
+  - !ipMatch
+    ip: www.camptocamp.org
+  - !dnsMatch
+    host: demo.opengeo.org
+    port: 80
+  - !dnsMatch
+    host: terraservice.net
+    port: 80
+  - !dnsMatch
+    host: sigma.openplans.org
+  - !dnsMatch
+    host: demo.mapfish.org
+  - !dnsMatch
+    host: b.tile.openstreetmap.org
+  - !dnsMatch
+    host: a.tile.openstreetmap.org
+  - !dnsMatch
+    host: c.tile.openstreetmap.org
+
+layouts:
+  # A3 Portrait:
+  #   mainPage:
+  #     pageSize: A3
+  #     items:
+  #       - !map
+  #         spacingAfter: 1000
+  #         width: 440
+  #         height: 483
+
+
+  #===========================================================================
+  A4 Portrait:
+  #===========================================================================
+    metaData:
+      title: '${mapTitle}'
+      author: 'IMIS'
+      subject: 'IMIS Map'
+      keywords: 'map,print,nepal'
+      creator: 'IMIS'
+    #-------------------------------------------------------------------------
+
+    mainPage:
+      pageSize: A4
+      landscape: true
+      backgroundPdf:<server_ip>/pdf/A4_Landscape.pdf
+      rotation: false
+      header:
+        height: 16
+      items:
+        
+        - !map
+          width: 756.21
+          height: 436.8
+      
+            
+      footer: &commonFooter
+        height: 80
+        items:
+          - !columns
+            config:
+              cells:
+                - paddingBottom: 5   
+                - paddingLeft: 30
+                - paddingRight: 10
+                
+            items:
+              - !text
+                align: center
+                fontSize: 22
+                text: 'IMIS'
+                
+          
+              - !text
+                
+                align: left
+                fontSize: 10
+                text: 'Title : ${mapTitle}'
+                
+
+              - !text
+                align: right
+                fontSize: 8
+                text: 'Scale = 1:${scale}'
+                maxSize: 150
+
+             
+          - !columns
+            config:
+              cells:
+                - paddingBottom: 20   
+                - paddingLeft: 30
+                - width: 0
+
+            items:
+              - !text
+                align: center
+                fontSize: 12
+                #text: ''
+                text: 'Integrated Municipal Information System'
+                         
+              - !text
+                align: left
+                fontSize: 8
+                text: 'Description : ${description}'
+                
+              - !scalebar
+                  type: bar
+                  units: m
+                  maxSize: 150
+                  barBgColor: white
+                  fontSize: 8
+                  align: right
+
+
+
+          - !columns
+            config:
+              cells:
+                - paddingBottom: 5   
+                - paddingLeft: 80
+                - paddingRight: 0
+                - width: 500
+
+            items:
+              - !text
+                align: left
+                fontSize: 8
+                text: ''
+          
+              - !text
+                align: left
+                fontSize: 8
+                text: ''
+
+              - !text
+                align: right
+                fontSize: 8
+                text: '${fulldate}'
+
+
+  #===========================================================================
+  A3 Portrait:
+  #===========================================================================
+    metaData:
+      title: '${mapTitle}'
+      author: 'IMIS'
+      subject: 'IMIS Map'
+      keywords: 'map,print,nepal'
+      creator: 'IMIS'
+    #-------------------------------------------------------------------------
+
+    mainPage:
+      pageSize: A3
+      landscape: true
+      backgroundPdf: <server_ip>/pdf/A3_Landscape.pdf
+      rotation: false
+      header:
+        height: 20
+      items:
+        
+        - !map
+          width: 1092
+          height: 674.31
+      
+            
+      footer: &commonFooter
+        height: 80
+        items:
+          - !columns
+            config:
+              cells:
+                - paddingBottom: 5   
+                - paddingLeft: 30
+                - paddingRight: 10
+                
+            items:
+              - !text
+                align: center
+                fontSize: 25
+                text: 'IMIS'
+                
+          
+              - !text
+                
+                align: left
+                fontSize: 12
+                text: 'Title : ${mapTitle}'
+                
+
+              - !text
+                align: right
+                fontSize: 12
+                text: 'Scale = 1:${scale}'
+                maxSize: 150
+
+             
+          - !columns
+            config:
+              cells:
+                - paddingBottom: 5   
+                - paddingLeft: 30
+                
+                - width: 0
+
+            items:
+              - !text
+                align: left
+                fontSize: 16
+                #text: ''
+                text: 'Integrated Municipal Information System'
+                        
+              - !text
+                align: left
+                fontSize: 12
+                text: 'Description : ${description}'
+                
+              - !text
+                align: left
+                fontSize: 8
+                text: ''
+
+
+
+          - !columns
+            config:
+              cells:
+                - paddingBottom: 5   
+                - paddingLeft: 100
+                - paddingRight: 0
+                - width: 500
+
+            items:
+              - !text
+                align: left
+                fontSize: 8
+                text: ''
+          
+              - !text
+                align: left
+                fontSize: 8
+                text: ''
+
+              - !text
+                align: right
+                fontSize: 10
+                text: '${fulldate}'
+
+
+
+      
+
+
+
+
