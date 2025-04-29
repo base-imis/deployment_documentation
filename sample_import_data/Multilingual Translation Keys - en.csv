@@ -214,7 +214,7 @@ id,key,name,text,pages,Group,platform,load,created_at,updated_at
 213,building.validation.tank_depth_should_be_numeric_value,en,Tank Depth should be numeric value.,building,validation,any,f,,
 214,fsm_dashboard.name.fsm_servies,en,FSM Servies,fsm_dashboard,name,any,f,,
 215,fsm_dashboard.countbox.applications,en,Applications,fsm_dashboard,countbox,any,f,,
-216,fsm_dashboard.countbox.applications_responded,en,Applications responded,fsm_dashboard,countbox,any,f,,
+216,fsm_dashboard.countbox.applications_responded,en,Applications Responded,fsm_dashboard,countbox,any,f,,
 217,fsm_dashboard.countbox.number_of_containments_emptied,en,Number of Containments Emptied,fsm_dashboard,countbox,any,f,,
 218,fsm_dashboard.countbox.volume_of_sludge_emptied,en,Volume of Sludge Emptied (m³),fsm_dashboard,countbox,any,f,,
 219,fsm_dashboard.countbox.volume_of_sludge_disposed_on_fstp,en,Volume of sludge disposed on FSTP (m³),fsm_dashboard,countbox,any,f,,
