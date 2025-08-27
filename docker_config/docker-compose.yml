@@ -85,3 +85,21 @@ services:
     entrypoint: ['php', '/var/www/html/imis/artisan']
     networks:
       - laravel
+
+  queue-worker:
+    build:
+      context: ./dockerfiles
+      dockerfile: php.dockerfile
+      args:
+        - UID=${UID:-1000}
+        - GID=${GID:-1000}
+    container_name: queue-worker-imis
+    command: php artisan queue:work --sleep=3 --tries=3
+    volumes:
+      - ./src/base-imis:/var/www/html/imis:delegated
+    working_dir: /var/www/html/imis
+    restart: always
+    depends_on:
+      - php
+    networks:
+      - laravel
