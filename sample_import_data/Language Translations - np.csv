@@ -1914,3 +1914,21 @@
 1908,map.button.toilet_isochrone_map,np,Toilet Isochrone Map,map,button,any,f,शौचालयमा पहुँच समय नक्सा
 1909,map.button.estimated_travel_distance_(m),np,Estimated Travel Distance (m),map,button,any,f,अनुमानित यात्रा दूरी (मी.)
 1910,map.button.distance_in_meter,np,Distance in meter,map,button,any,f,दूरी (मिटरमा)
+1911,cwis.button.push_data_to_nsd,en,Push Data to NSD,cwis,button,any,f,NSD मा डाटा पठाउनुहोस्
+1912,cwis.button.check_publication_status_nsd,en,Check Publication status in NSD,cwis,button,any,f,NSD मा प्रकाशनको स्थिति जाँच गर्नुहोस्
+1913,cwis.message.please_select_year_first,en,Please select a year first.,cwis,message,any,f,कृपया पहिले वर्ष चयन गर्नुहोस्
+1914,cws.message.cwis_data_could_not_be_pushed_please_check_nsd_settings,en,CWIS Data Could Not be Pushed. Please Check NSD Integration Settings,cws,message,any,f,CWIS डाटा पठाउन सकिएन कृपया NSD एकीकरण सेटिङहरू जाँच गर्नुहोस्
+1915,cwis.message.push_cwis_indicator_nsd,en,Push CWIS Indicator to NSD,cwis,message,any,f,CWIS सूचक NSD मा पठाउनुहोस्
+1916,cwis.message.cwis_status_published_draft_years,en,CWIS Status of Published and Draft Years,cwis,message,any,f,प्रकाशित तथा ड्राफ्ट वर्षहरूको CWIS स्थिति
+1917,cwis.message.unable_retrieve_year_data_nsd_please_verify_nsd_integrations_settings,en,Unable to retrieve year data from NSD. Please verify your NSD integrations settings,cwis,message,any,f,NSD बाट वर्षको डाटा प्राप्त गर्न सकिएन। कृपया आफ्नो NSD एकीकरण सेटिङहरू पुष्टि गर्नुहोस्।
+1918,nsd_setting.label.city,en,City,nsd_setting,label,any,f,शहर
+1919,nsd_setting.label.url_send_data,en,URL To Send Data,nsd_setting,label,any,f,डाटा पठाउने URL
+1920,nsd_setting.label.url_for_authentication,en,URL For Authentication,nsd_setting,label,any,f,प्रमाणीकरणका लागि URL
+1921,nsd_setting.validation.username_required,en,The Username is required.,nsd_setting,validation,any,f,प्रयोगकर्ता नाम आवश्यक छ
+1922,nsd_setting.validation.password_required,en,The Password is required.,nsd_setting,validation,any,f,पासवर्ड आवश्यक छ
+1923,nsd_setting.validation.city_required,en,The City is required.,nsd_setting,validation,any,f,शहर आवश्यक छ
+1924,nsd_setting.validation.url_send_data_required,en,The URL To Send Data is required.,nsd_setting,validation,any,f,डाटा पठाउने URL आवश्यक छ
+1925,nsd_setting.validation.url_send_data_must_valid_url,en,The URL To Send Data must be a valid URL.,nsd_setting,validation,any,f,डाटा पठाउने URL मान्य हुनुपर्छ
+1926,nsd_setting.validation.url_authenticate_required,en,The URL To Authenticate is required.,nsd_setting,validation,any,f,प्रमाणीकरणका लागि URL आवश्यक छ
+1927,nsd_setting.validation.url_authenticate_must_valid_url,en,The URL To Authenticate must be a valid URL.,nsd_setting,validation,any,f,प्रमाणीकरणका लागि URL मान्य हुनुपर्छ
+1928,nsd_setting.title.nsd_integration_setting,en,NSD Integration Setting,nsd_setting,title,any,f,NSD एकीकरण सेटिङ
